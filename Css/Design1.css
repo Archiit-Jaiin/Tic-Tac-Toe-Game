@@ -1,0 +1,12 @@
+button{
+    width:100px;
+    height:100px;
+    background-color: aqua;
+    /* font:40px; */
+    font-size: larger;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: lavender;
+}
