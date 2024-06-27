@@ -61,7 +61,6 @@ function resetAfter5Sec(){
     setTimeout(function(){
         reset();
     }, 5000);
-    console.log('Doing Something else');
 }
 var flag = true;
 var count = 0;
@@ -74,7 +73,7 @@ function printXorZero(){
     this.innerText = buttonValue; // <button>X</button>
     flag = !flag;
     if(count>=5){
-           if(isGameOver()){
+           if(isGameOver() || count==9){
                 blocked = true;
                 document.getElementById('output').innerText = 'Game Over and Reset After 5 Sec';    
                 resetAfter5Sec();
